@@ -5,9 +5,9 @@ let impares: number[] = [];
 for (let i: number = 0; i < array.length; i++) {
   if (array[i] % 2 == 0) {
     pares.push(array[i]);
-  } else {
-    impares.push(array[i]);
+    continue;
   }
+  impares.push(array[i]);
 }
 
 console.log(`Números pares: [ ${pares} ]`);
