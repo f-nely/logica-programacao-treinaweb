@@ -4,9 +4,9 @@ let aluno: { id: number; nome: string; notas: number[] } = {
   notas: [7, 8, 9, 6, 8.5],
 };
 
-let soma1: number = 0;
-let media1: number = 0;
 function calcularMedia(student: { id: number; nome: string; notas: number[] }) {
+  let soma1: number = 0;
+  let media1: number = 0;
   for (let i: number = 0; i < student.notas.length; i++) {
     soma1 += student.notas[i];
   }
