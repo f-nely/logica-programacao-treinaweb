@@ -1,16 +1,17 @@
 "use strict";
-let numerosArray = [5, 80, 4];
-//let numerosArray: number[] = [5, 80, -4];
+//let numerosArray: number[] = [5, 80, 4];
+let numerosArray = [5, 80, -4];
 let temNegativo = false;
-for (let i = 0; i < numerosArray.length; i++) {
-    if (numerosArray[i] < 0) {
-        temNegativo = true;
+function findNegativeNumbers(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            temNegativo = true;
+            break;
+        }
     }
-    else {
-        temNegativo = false;
-    }
+    return temNegativo;
 }
-if (temNegativo) {
+if (findNegativeNumbers(numerosArray)) {
     console.log("Esse array possui números negativos");
 }
 else {

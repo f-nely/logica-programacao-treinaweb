@@ -4,9 +4,9 @@ let aluno = {
     nome: "Maria",
     notas: [7, 8, 9, 6, 8.5],
 };
-let soma1 = 0;
-let media1 = 0;
 function calcularMedia(student) {
+    let soma1 = 0;
+    let media1 = 0;
     for (let i = 0; i < student.notas.length; i++) {
         soma1 += student.notas[i];
     }

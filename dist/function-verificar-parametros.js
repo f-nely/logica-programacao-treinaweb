@@ -6,9 +6,7 @@ function verificarParametros(numbers, n1) {
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] == n1) {
             verifica = true;
-        }
-        else {
-            verifica = false;
+            break;
         }
     }
     if (verifica) {

@@ -7,6 +7,6 @@ function exibirMaior(arr) {
             maior = arr[i];
         }
     }
-    console.log(maior);
+    return maior;
 }
-exibirMaior(numerosArray2);
+console.log(exibirMaior(numerosArray2));
